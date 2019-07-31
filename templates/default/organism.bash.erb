@@ -15,3 +15,8 @@ function helm() {
   local helm_path=<%= node[:kube][:helm][:base_directory] %>/<%= node[:kube][:helm][:version] %>/helm
   DEBUG='' $helm_path $*
 }
+
+function tiller() {
+  local tiller_path=<%= node[:kube][:tiller][:base_directory] %>/<%= node[:kube][:tiller][:version] %>/tiller
+  DEBUG='' $tiller_path $*
+}
