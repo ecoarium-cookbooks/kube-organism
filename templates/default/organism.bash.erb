@@ -17,6 +17,6 @@ function helm() {
 }
 
 function tiller() {
-  local tiller_path=<%= node[:kube][:tiller][:base_directory] %>/<%= node[:kube][:tiller][:version] %>/tiller
+  local tiller_path=<%= node[:kube][:helm][:base_directory] %>/<%= node[:kube][:helm][:version] %>/tiller
   DEBUG='' $tiller_path $*
 }
