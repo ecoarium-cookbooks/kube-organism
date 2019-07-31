@@ -10,3 +10,8 @@ function kubectl() {
   local kubectl_path=<%= node[:kube][:kubectl][:base_directory] %>/<%= node[:kube][:kubectl][:version] %>/kubectl
   DEBUG='' $kubectl_path $*
 }
+
+function helm() {
+  local helm_path=<%= node[:kube][:helm][:base_directory] %>/<%= node[:kube][:helm][:version] %>/helm
+  DEBUG='' $helm_path $*
+}

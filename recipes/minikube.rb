@@ -4,6 +4,7 @@
 #
 
 include_recipe 'kube::minikube'
+include_recipe 'kube::helm'
 
 target_directory = "#{$WORKSPACE_SETTINGS[:paths][:project][:workspace][:settings][:organisms][:home]}/kube/shell/lib"
 
